@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    char A,B,C;
+    cin >> A;
+    cin >> B;
+    cin >> C;
+    cout << "A = " << A << ", B = " << B << ", C = " << C << "\n" ;
+    cout << "A = " << B << ", B = " << C << ", C = " << A << "\n" ;
+    cout << "A = " << C << ", B = " << A << ", C = " << B << "\n" ;
+
+
+    return 0;
+}
