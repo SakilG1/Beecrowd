@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+#include<stdio.h>
+using namespace std;
+int main()
+{
+    string str;
+    int c=0,i;
+    getline(cin, str);
+
+    for(i=0; i<str.length(); i++)
+    {
+        c++;
+    }
+
+    if(c<=80)
+    {
+        cout << "YES\n";
+    }
+    else{
+        cout << "NO\n";
+    }
+
+    return 0;
+}
