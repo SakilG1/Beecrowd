@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,a,b;
+    while(cin >> n >> a)
+    {
+        b=0;
+        while(a!=0)
+        {
+            b=b+a%10;
+            a=a/10;
+        }
+
+        if(b%3==0)
+        {
+            cout << b << " sim\n";
+        }
+        else{
+            cout << b << " nao\n";
+        }
+    }
+
+    return 0;
+}
