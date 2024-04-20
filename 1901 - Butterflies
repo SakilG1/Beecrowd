@@ -1,0 +1,40 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n, c=0, i, j, x, y;
+    while(cin >> n)
+    {
+        int a[n][n];
+        int b[n*2];
+
+        for(i=0; i<n; i++)
+        {
+            for(j=0; j<n; j++)
+            {
+                cin >> a[i][j];
+            }
+        }
+        for(i=0; i<n*2; i++)
+        {
+            cin >> x >> y;
+            b[i]=a[x-1][y-1];
+        }
+
+        for(i=0; i<n*2; i++)
+        {
+            if(b[i]!=0)
+            {
+                c++;
+            }
+
+            for(j=i+1; j<n*2; j++)
+            {
+                if(b[i]!=0 && b[i]==b[j])
+                    b[j]=0;
+            }
+        }
+        cout << c << endl;
+    }
+    return 0;
+}
