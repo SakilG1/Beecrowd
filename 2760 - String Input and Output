@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int i;
+    string str1, str2, str3;
+
+    getline(cin, str1);
+    getline(cin, str2);
+    getline(cin, str3);
+
+    cout << str1 << str2 << str3 << "\n";
+    cout << str2 << str3 << str1 << "\n";
+    cout << str3 << str1 << str2 << "\n";
+
+    for(i=0; i<10 && i<str1.length(); i++)
+    {
+        cout << str1[i];
+    }
+    for(i=0; i<10 && i<str2.length(); i++)
+    {
+        cout << str2[i];
+    }
+    for(i=0; i<10 && i<str3.length(); i++)
+    {
+        cout << str3[i];
+    }
+    cout << "\n";
+
+    return 0;
+}
