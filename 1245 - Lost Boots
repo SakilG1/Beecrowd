@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n, i, j;
+
+    while(cin >> n)
+    {
+        int m[n], c=0;
+        string l[n];
+
+        for(i=0; i<n; i++)
+        {
+            cin >> m[i];
+            cin  >> l[i];
+        }
+        for(i=0; i<n; i++)
+        {
+            for(j=i+1; j<n; j++)
+            {
+                if(m[i]!=0 && m[i]==m[j] && l[i]!=l[j])
+                {
+                    c++;
+                    m[j]=0;
+                    break;
+                }
+            }
+        }
+        cout << c << endl;
+    }
+    return 0;
+}
