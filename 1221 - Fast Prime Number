@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin >> n;
+    while(n--)
+    {
+        int x, c=0;
+        cin >> x;
+        for(int i=2; i*i<x; i++)
+        {
+            if(x%i==0)
+            {
+                cout << "Not Prime\n";
+                c++;
+                break;
+            }
+        }
+        if(c==0)
+            cout<< "Prime\n";
+    }
+
+    return 0;
+}
