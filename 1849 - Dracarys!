@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,b,c,d,e,f,g,h;
+
+    while(cin >> a >> b >> c >> d)
+    {
+        e= min(a, b);
+        f= min(c, d);
+        e=e+f;
+        g=min(max(a, b),max(c,d));
+        h= min(e,g);
+
+        cout << h*h << "\n";
+    }
+
+    return 0;
+}
