@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string str;
+
+    while(cin >> str)
+    {
+        int i,x,n,len,j;
+        len=str.length();
+        cin >> n;
+        cout << "$";
+
+        i=len-1;
+        for(j=0; j<len; j++)
+        {
+            if(i%3==0 && j!=len-1 && i!=0)
+            {
+                cout << str[j] << ",";
+            }
+            else{
+                cout << str[j];
+            }
+            i--;
+        }
+        
+        if(n<10)
+        {
+            cout << ".0" << n << "\n";
+        }
+        else{
+            cout << "." << n << "\n";
+        }
+    }
+
+
+    return 0;
+}
