@@ -1,0 +1,11 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    double a,b,x;
+    cin >> a >> b;
+    x=((b-a)/a)*100;
+    printf("%.2lf%%\n",x);
+
+    return 0;
+}
