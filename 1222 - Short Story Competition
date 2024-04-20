@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int word,line,letter,i,page,j,l,c;
+    while(cin >> word >> line >> letter)
+    {
+        string story;
+        l=1;
+        c=0;
+        page=1;
+        while(word--)
+        {
+            cin >> story;
+            if( c + (c!=0) + story.length() <=letter )
+            {
+                c = c + story.length() + (c!=0);
+            }
+            else
+            {
+                c = story.length();
+                l++;
+                if( l > line )
+                {
+                    page++;
+                    l=1;
+                }
+            }
+        }
+        cout << page << "\n";
+    }
+    return 0;
+}
