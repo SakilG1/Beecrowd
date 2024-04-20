@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int N,i;
+    string str;
+
+    cin >> N;
+    while(N--)
+    {
+        getline(cin, str);
+        cout << "I am Toorg!\n";
+    }
+
+    return 0;
+}
