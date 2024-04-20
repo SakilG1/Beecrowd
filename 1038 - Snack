@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int x, y;
+    double t;
+
+    cin >> x >> y;
+
+    if(x==1)
+        t += 4.00;
+    else if(x==2)
+        t += 4.50;
+    else if(x==3)
+        t += 5.00;
+    else if(x==4)
+        t += 2.00;
+    else if(x==5)
+        t += 1.50;
+
+    t *= y;
+    
+    cout << "Total: R$ " << fixed << setprecision(2) << t << endl;
+    
+    return 0;
+}
