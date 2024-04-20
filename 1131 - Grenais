@@ -1,0 +1,43 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int i, g, d, c;
+    i=g=d=c=0;
+    while(1)
+    {
+        int x, y;
+        c++;
+        cin >> x >> y;
+        if(x>y)
+            i++;
+        else if(x<y)
+            g++;
+        else{
+            d++;
+        }
+        int n;
+        cout << "Novo grenal (1-sim 2-nao)\n";
+        cin >> n;
+        if(n==1)
+        {
+            continue;
+        }
+        else
+            break;
+    }
+    cout << c << " grenais\n";
+    cout << "Inter:" << i << endl;
+    cout << "Gremio:" << g << endl;
+    cout << "Empates:" << d << endl;
+    if(i>g)
+        cout << "Inter venceu mais\n";
+    else if(i<g)
+        cout << "Gremio venceu mais\n";
+    else{
+        cout << "Não houve vencedor\n";
+    }
+
+
+    return 0;
+}
