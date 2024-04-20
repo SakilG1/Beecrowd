@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    string s;
+    while (cin >> n)
+    {
+        while (n--)
+        {
+            cin >> s;
+            cout << (char) stoi(s, nullptr, 2);
+        }
+        cout << endl;
+    }
+    return 0;
+}
