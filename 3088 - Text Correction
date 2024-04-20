@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string str;
+    while( getline(cin, str) )
+    {
+        int x,i;
+        x=str.length();
+        for(i=0; i<x; i++)
+        {
+            if((str[i]==' ') && (str[i+1]==',' || str[i+1]=='.'))
+            {
+                continue;
+            }
+            else{
+                cout << str[i];
+            }
+        }
+        cout << "\n";
+    }
+
+    return 0;
+}
