@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int x, y, t;
+    cin >> x >> y;
+
+    if(x<y)
+    {
+        t = y-x;
+    }
+    else{
+        t = 24-x+y;
+    }
+    cout << "O JOGO DUROU " << t <<" HORA(S)\n";
+
+    return 0;
+}
