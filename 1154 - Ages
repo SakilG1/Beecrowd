@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    double x, sum=0.0, c=0.0;
+    while(cin >> x && x>=0)
+    {
+        c++;
+        sum += x;
+    }
+    cout << fixed << setprecision(2) << sum/c << endl;
+
+    return 0;
+}
