@@ -1,0 +1,37 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int N,M,i,j,c=0;
+    cin >> N >> M;
+    int arr[N][M];
+
+    for(i=0; i<N; i++)
+    {
+        for(j=0; j<M; j++)
+        {
+            cin >> arr[i][j];
+        }
+    }
+
+    for(i=0; i<N; i++)
+    {
+        for(j=0; j<M; j++)
+        {
+            if(arr[i][j]==42 )
+            {
+                if(arr[i][j-1]==7 && arr[i][j+1]==7 && arr[i+1][j-1]==7 && arr[i+1][j]==7 && arr[i+1][j+1]==7 && arr[i-1][j-1]==7 && arr[i-1][j]==7 && arr[i-1][j+1]==7 )
+                {
+                    cout << i+1 << " " << j+1 << "\n";
+                    c++;
+                }
+            }
+        }
+    }
+    if(c==0)
+    {
+        cout << "0 0\n";
+    }
+
+    return 0;
+}
