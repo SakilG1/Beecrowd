@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int N,i,j=2,k=1;
+    int maxsize=100100;
+    long long int fibo[maxsize], fibonot[maxsize];
+
+    fibo[0]=0;fibo[1]=1;
+    for(i=2; i<=maxsize; i++)
+    {
+        fibo[i]=fibo[i-1]+fibo[i-2];
+    }
+
+    for(i=1; i<=maxsize; i++)
+    {
+        if(fibo[j]!=i)
+        {
+            fibonot[k]=i;
+            k++;
+        }
+        else{
+            j++;
+        }
+    }
+
+    cin >> N;
+    cout << fibonot[N] << "\n";
+
+
+
+    return 0;
+}
