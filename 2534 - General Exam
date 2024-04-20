@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int N,Q,i,tem,j,x;
+
+    while( cin >> N >> Q)
+    {
+        int citi[N];
+
+        for(i=0; i<N; i++)
+        {
+            cin >> citi[i];
+        }
+        for(i=0; i<=N; i++)
+        {
+            for(j=i+1; j<N; j++)
+            {
+                if(citi[i]<citi[j])
+                {
+                    tem=citi[i];
+                    citi[i]=citi[j];
+                    citi[j]=tem;
+                }
+            }
+        }
+        for(i=0; i<Q; i++)
+        {
+            cin >> x;
+            cout << citi[x-1] << "\n";
+        }
+
+
+
+    }
+
+    return 0;
+}
