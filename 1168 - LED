@@ -1,0 +1,62 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int N,i,led;
+    string str;
+
+    cin >> N;
+
+   while(N--)
+    {
+        led=0;
+        cin>> str;
+
+        for(i=0; i < str.length(); i++)
+        {
+            if(str[i]=='0')
+            {
+                led=led+6;
+            }
+            else if(str[i]=='1')
+            {
+                led=led+2;
+            }
+            else if(str[i]=='2')
+            {
+                led=led+5;
+            }
+            else if(str[i]=='3')
+            {
+                led=led+5;
+            }
+            else if(str[i]=='4')
+            {
+                led=led+4;
+            }
+            else if(str[i]=='5')
+            {
+                led=led+5;
+            }
+            else if(str[i]=='6')
+            {
+                led=led+6;
+            }
+            else if(str[i]=='7')
+            {
+                led=led+3;
+            }
+            else if(str[i]=='8')
+            {
+                led=led+7;
+            }
+            else if(str[i]=='9')
+            {
+                led=led+6;
+            }
+        }
+        cout << led << " leds\n";
+    }
+
+    return 0;
+}
