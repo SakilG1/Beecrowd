@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int C,i;
+    string str;
+    cin >> C;
+    while(C--)
+    {
+        int x=0;
+        cin >> str;
+
+        for(i=0; i<str.length(); i++)
+        {
+            x++;
+        }
+        printf("%.2f\n",x*.01);
+    }
+    return 0;
+}
