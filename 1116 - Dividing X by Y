@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int N,i;
+    float X,Y;
+    cin >> N;
+    for(i=1; i<=N; i++)
+    {
+        cin >> X >> Y;
+        if(Y==0)
+        {
+            cout << "divisao impossivel\n";
+        }
+        else{
+            printf("%.1f\n",X/Y);
+        }
+    }
+
+    return 0;
+}
