@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+#include<string.h>
+using namespace std;
+int main()
+{
+    int n,i;
+    string str;
+    str="LIFE IS NOT A PROBLEM TO BE SOLVED";
+    cin >> n;
+    for(i=0; i<n; i++)
+    {
+        cout << str[i];
+    }
+    cout << "\n";
+
+    return 0;
+}
