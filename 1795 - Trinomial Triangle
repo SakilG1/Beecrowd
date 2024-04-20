@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    long long int x;
+    cin >> n;
+    x=pow(3, n);
+    cout << x << endl;
+
+    return 0;
+}
