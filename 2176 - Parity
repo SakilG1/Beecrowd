@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string str;
+    string b;
+    int i,c=0;
+    cin >> str;
+
+    for(i=0; i<str.length(); i++)
+    {
+        if(str[i]=='1')
+            c++;
+    }
+    if(c%2==0)
+    {
+        b='0';
+    }
+    else
+    {
+        b='1';
+    }
+
+    cout << str + b << "\n";
+
+    return 0;
+}
