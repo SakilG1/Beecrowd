@@ -1,0 +1,43 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string str;
+
+    while(getline(cin, str))
+    {
+        int x,i,m=0,n=0;
+        x=str.length();
+        for(i=0; i<x; i++)
+        {
+            if(str[i]=='_')
+            {
+                if(m%2==0)
+                {
+                    cout << "<i>";
+                }
+                else{
+                    cout << "</i>";
+                }
+                m++;
+            }
+            else if(str[i]=='*')
+            {
+                if(n%2==0)
+                {
+                    cout << "<b>";
+                }
+                else{
+                    cout << "</b>";
+                }
+                n++;
+            }
+            else{
+                cout << str[i];
+            }
+        }
+        cout << "\n";
+    }
+
+    return 0;
+}
