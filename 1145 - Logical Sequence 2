@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int X,Y,i,j;
+    cin >> X >> Y;
+    for(i=1; i<=Y; i)
+    {
+        for(j=1; j<X; j++)
+        {
+            cout << i << " ";
+            i++;
+            if(i>Y)
+                break;
+        }
+        if(i>Y)
+            break;
+        cout << i <<"\n";
+        i++;
+    }
+    return 0;
+}
