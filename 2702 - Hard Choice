@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int c1,b1,p1,c2,b2,p2,count=0;
+
+    cin >> c1 >> b1 >> p1;
+    cin >> c2 >> b2 >> p2;
+
+    if(c2>c1)
+    {
+        count=count+(c2-c1);
+    }
+
+    if(b2>b1)
+    {
+        count=count+(b2-b1);
+    }
+    if(p2>p1)
+    {
+        count=count+(p2-p1);
+    }
+    cout << count << "\n";
+
+    return 0;
+}
