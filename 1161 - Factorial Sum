@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long int M,N,x,y,s;
+    int i;
+    while(cin >> M >> N)
+    {
+        s=0;
+        x=y=1;
+        for(i=M; i>0; --i)
+        {
+            x=x*i;
+        }
+        for(i=N; i>0; --i)
+        {
+            y=y*i;
+        }
+        s=x+y;
+        cout << s << "\n";
+
+    }
+
+    return 0;
+}
