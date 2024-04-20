@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin >> n;
+    while(n--)
+    {
+        int s=0,e=0,d,x,i;
+        string str;;
+        cin >> str;
+        x=str.length();
+        for(i=0; i<x; i++)
+        {
+            if(str[i]=='<')
+            {
+                s++;
+            }
+            else if(str[i]=='>')
+            {
+                if(s>0)
+                {
+                    e++;
+                    s--;
+                }
+            }
+        }
+        cout << e << endl;
+    }
+
+    return 0;
+}
