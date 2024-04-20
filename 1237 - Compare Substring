@@ -1,0 +1,44 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int i,j,x,y,c,m,n,d;
+    string s1,s2;
+    while( getline(cin, s1))
+    {
+        getline(cin, s2);
+        x=s1.length();
+        y=s2.length();
+        c=0;
+        d=0;
+        for(i=0; i<x; i++)
+        {
+            for(j=0; j<y; j++)
+            {
+                if(s1[i]==s2[j])
+                {
+                    c=0;
+                    for( m=i,n=j; m<x, n<y; m++,n++ )
+                    {
+                        if(s1[m]!=s2[n])
+                        {
+                           break;
+                        }
+                        else{
+                        c++;
+                        }
+                    }
+                    if(c>d)
+                    {
+                        d=c;
+                    }
+                }
+            }
+        }
+        cout << d << "\n";
+    }
+
+
+    return 0;
+}
+
