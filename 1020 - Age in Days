@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,d,m,y;
+    cin >> a;
+    y=a/365;
+    m=(a%365)/30;
+    d=(a%365)%30;
+    cout << y << " ano(s)\n";
+    cout << m << " mes(es)\n";
+    cout << d << " dia(s)\n";
+
+    return 0;
+}
