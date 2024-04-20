@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a, b;
+    float c;
+
+    cin >> a >> b;
+
+    c = a*b/12.000;
+    printf("%.3f\n", c);
+
+    return 0;
+}
