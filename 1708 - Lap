@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    double x,y;
+    while(cin >> x >> y)
+    {
+        double c;
+        x=abs(x-y);
+        c=ceil(y/x);
+        cout << c << "\n";
+    }
+
+    return 0;
+}
