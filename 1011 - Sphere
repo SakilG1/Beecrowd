@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    double pi = 3.14159, r, sphere;
+
+    cin >> r;
+    sphere = (4.0/3)*pi*(r*r*r);
+    printf("VOLUME = %.3f\n", sphere);
+
+    return 0;
+}
