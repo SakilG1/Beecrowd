@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t,x,i;
+    cin >> t;
+    while(t--)
+    {
+        int c =0;
+        string a, b;
+        cin >> a >> b;
+        x = a.length();
+        for(i=0; i<x; i++)
+        {
+            if(b[i]>a[i])
+                c = c + (b[i]-a[i]);
+            else if(b[i]!=a[i])
+                c = c + ('z'-a[i]+b[i]-96);
+        }
+        cout << c << endl;
+    }
+
+    return 0;
+}
