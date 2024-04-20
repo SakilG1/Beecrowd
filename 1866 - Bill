@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int C,N,S,i;
+    cin >> C;
+    for(i=0; i<C; i++)
+    {
+        cin >> N;
+        if(N%2==0)
+        {
+            S=0;
+        }
+        else{
+            S=1;
+        }
+        cout << S << "\n";
+    }
+
+    return 0;
+}
