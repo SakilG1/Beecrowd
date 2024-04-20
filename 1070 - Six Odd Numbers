@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int x, i, t = 6;
+    cin >> x; 
+    if (x % 2 != 0)
+        i = x;
+    else
+        i = x + 1;
+
+    while (t--)
+    {
+        cout << i << endl;
+        i += 2;
+    }
+    
+    
+    return 0;
+}
