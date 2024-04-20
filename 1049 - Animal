@@ -1,0 +1,54 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string str1,str2,str3;
+
+    cin >> str1 >> str2 >> str3;
+
+    if(str1[0]=='v')
+    {
+        if(str2[0]=='a')
+        {
+            if(str3[0]=='c')
+            {
+                cout << "aguia\n";
+            }
+            else{
+                cout << "pomba\n";
+            }
+        }
+        else{
+            if(str3[0]=='o')
+            {
+                cout << "homem\n";
+            }
+            else{
+                cout << "vaca\n";
+            }
+        }
+    }
+    else{
+        if(str2[0]=='i')
+        {
+            if(str3[2]=='m')
+            {
+                cout << "pulga\n";
+            }
+            else{
+                cout << "lagarta\n";
+            }
+        }
+        else{
+            if(str3[0]=='h')
+            {
+                cout << "sanguessuga\n";
+            }
+            else{
+                cout << "minhoca\n";
+            }
+        }
+    }
+
+    return 0;
+}
