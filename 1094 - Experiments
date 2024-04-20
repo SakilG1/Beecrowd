@@ -1,0 +1,39 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int N,Amount,i,C,R,S,t;
+    Amount=C=R=S=t=0;
+    char Type;
+    double pc,pr,ps;
+
+    cin >> N;
+    for(i=0; i<N; i++)
+    {
+        cin >> Amount;
+        t=t+Amount;
+        cin >> Type;
+        if(Type =='C')
+            C=C+Amount;
+        else if(Type =='R')
+        {
+            R=R+Amount;
+        }
+        else if(Type =='S'){
+            S=S+Amount;
+        }
+
+    }
+    pc=(C*100.00)/t;
+    pr=(R*100.00)/t;
+    ps=(S*100.00)/t;
+
+    cout<< "Total: " << t << " cobaias\n";
+    cout<< "Total de coelhos: " << C << "\n";
+    cout<< "Total de ratos: " << R << "\n";
+    cout<< "Total de sapos: " << S << "\n";
+    printf("Percentual de coelhos: %.2lf %\n",pc);
+    printf("Percentual de ratos: %.2lf %\n",pr);
+    printf("Percentual de sapos: %.2lf %\n",ps);
+    return 0;
+}
