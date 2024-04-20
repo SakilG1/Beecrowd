@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int c,i,f;
+    string str;
+    cin >> c;
+
+    while(c--)
+    {
+        cin >> str;
+        cin >> f;
+
+        if( str[0]=='T' && str[1]=='h' && str[2]=='o' && str[3]=='r')
+        {
+            cout << "Y\n";
+        }
+
+        else{
+            cout << "N\n";
+        }
+    }
+    return 0;
+}
