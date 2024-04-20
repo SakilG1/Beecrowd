@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int X,Z,i,s=0,c=1;
+    cin >> X >> Z;
+    while(Z<=X)
+    {
+        cin >> Z;
+    }
+    for(i=X; i<Z ;i++)
+    {
+        s=s+i;
+        if(s>Z)
+            break;
+        c++;
+
+
+    }
+    cout << c << "\n";
+
+    return 0;
+}
+
