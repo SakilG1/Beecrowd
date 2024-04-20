@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    float M[12][12],sum=0;
+    int i,j,L;
+    char T;
+
+    cin >> L;
+    cin >> T;
+
+    for(i=0; i<12; i++)
+    {
+        for(j=0; j<12; j++)
+        {
+            cin >> M[i][j];
+        }
+    }
+    for(i=0; i<12; i++)
+        {
+            sum=sum+M[L][i];
+        }
+    if(T=='S')
+    {
+        printf("%.1f\n",sum);
+    }
+    else if(T=='M')
+    {
+        printf("%.1f\n",sum/12);
+    }
+    return 0;
+}
