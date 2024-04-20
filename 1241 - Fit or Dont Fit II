@@ -1,0 +1,41 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,x,y,i,j;
+    cin >> n;
+    while(n--)
+    {
+        int c=0;
+        string str,str1;
+        cin >> str >> str1;
+        x=str.length();
+        y=str1.length();
+        if(y>x)
+        {
+            cout << "nao encaixa\n";
+        }
+        else{
+            x=x-1;
+            for(i=y-1; i>=0; i--)
+            {
+                if(str1[i]!=str[x])
+                {
+                    c++;
+                }
+                x--;
+            }
+            if(c==0)
+        {
+            cout << "encaixa\n";
+        }
+        else{
+            cout << "nao encaixa\n";
+        }
+        }
+
+        
+    }
+
+    return 0;
+}
