@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int code1,code2,unit1,unit2;
+    float p1,p2,v;
+    cin >> code1 >> unit1;
+    cin >> p1;
+    cin >> code2 >> unit2;
+    cin >> p2;
+    v=(unit1*p1)+(unit2*p2);
+    cout << "VALOR A PAGAR: R$ ";
+    printf("%.2f\n",v);
+
+    return 0;
+}
