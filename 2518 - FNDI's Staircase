@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int N,H,C,L;
+    double area;
+    while(cin >> N)
+    {
+        cin >> H >> C >> L;
+        area=sqrt((H*H)+(C*C))*N;
+
+        printf("%.4f\n",(area*L)/(100.0*100.0));
+
+    }
+
+    return 0;
+}
