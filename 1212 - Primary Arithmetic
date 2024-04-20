@@ -1,0 +1,42 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long int a,b,x,y;
+    while(cin >> a >> b)
+    {
+        if(a==0 && b==0)
+            break;
+        
+        int t=0,c=0;
+        while(1)
+        {
+            x=a%10;
+            y=b%10;
+            a=a/10;
+            b=b/10;
+            if(x+y+c>9)
+            {
+                t++;
+                c=1;
+            }
+            else c=0;
+
+            if(a==0 && b==0)
+                break;
+        }
+        if(t==0)
+        {
+            cout << "No carry operation.\n";
+        }
+        else if(t==1)
+        {
+            cout << t << " carry operation.\n";
+        }
+        else{
+            cout << t << " carry operations.\n";
+        }
+    }
+
+    return 0;
+}
