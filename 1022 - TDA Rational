@@ -1,0 +1,55 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int mdc(int a, int b)
+{
+    if(b==0) return a;
+    else
+    return mdc(b, a%b);
+}
+
+int main()
+{
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int n1, n2, d1, d2, n, d;
+        char c1, c2, c3;
+        cin >> n1 >> c1 >> d1 >> c2 >> n2 >> c3 >> d2;
+
+        if (c2 == '+')
+        {
+            n = (n1 * d2) + (n2 * d1);
+            d = d1 * d2;
+            cout << n << "/" << d;
+        }
+
+        else if (c2 == '-')
+        {
+            n = (n1 * d2) - (n2 * d1);
+            d = d1 * d2;
+            cout << n << "/" << d;
+        }
+        else if (c2 == '*')
+        {
+            n = n1 * n2;
+            d = d1 * d2;
+            cout << n << "/" << d;
+        }
+        else if (c2 == '/')
+        {
+            n = n1 * d2;
+            d = n2 * d1;
+            cout << n << "/" << d;
+        }
+        int min = mdc(n, d);
+        if(min < 0)
+        {
+            min = -1*min;
+        }
+        cout << " = " << n/min << "/" << d/min << endl;
+    }
+
+    return 0;
+}
