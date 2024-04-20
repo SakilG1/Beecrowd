@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int N,i,j;
+
+    cin >> N;
+    int arr[N];
+
+    for(i=0; i<N; i++)
+    {
+        cin >> arr[i];
+    }
+
+    for(i=1; i<=2000; i++)
+    {
+        int count=0;
+        for(j=0; j<N; j++)
+        {
+            if(arr[j]==i)
+            {
+                count++;
+            }
+        }
+        if(count!=0)
+        {
+            cout << i << " aparece " << count << " vez(es)\n";
+        }
+    }
+    return 0;
+}
