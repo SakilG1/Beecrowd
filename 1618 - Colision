@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int N,i,Ax,Ay,Bx,By,Cx,Cy,Dx,Dy,Rx,Ry;
+    cin >> N;
+
+    for(i=0; i<N; i++)
+    {
+        cin >> Ax >> Ay >> Bx >> By >> Cx >> Cy >> Dx  >> Dy >> Rx >> Ry;
+        if(Dy >= Ry && Cy >= Ry && Ay <= Ry && By <= Ry)
+        {
+            if(Dx <= Rx && Ax <= Rx && Cx >= Rx && Bx >= Rx)
+            {
+                cout << "1";
+            }
+            else
+            {
+                cout << "0";
+            }
+        }
+        else
+        {
+            cout << "0";
+        }
+        cout << "\n";
+    }
+
+return 0;
+}
