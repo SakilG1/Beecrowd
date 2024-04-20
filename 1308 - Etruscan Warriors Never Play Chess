@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,i;
+    long long int x;
+    double d,y;
+
+    cin >> n;
+    while(n--)
+    {
+        cin >> x;
+        d=1+8*x;
+        y=(-1+sqrt(d))/2;
+        printf("%lld\n",(long long int)y);
+    }
+
+    return 0;
+}
