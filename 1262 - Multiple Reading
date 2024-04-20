@@ -1,0 +1,41 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string str;
+    while(cin >> str)
+    {
+        int n,c=0,r=0,result,x,i,w=0;
+        cin>> n;
+        x=str.length();
+        for(i=0; i<x; i++)
+        {
+            if(str[i]=='R')
+            {
+                c++;
+                if(c==n)
+                {
+                    r++;
+                    c=0;
+                }
+            }
+            else{
+                w++;
+                if(str[i-1]=='R' && c!=0)
+                {
+                    r++;
+                    c=0;
+                }
+            }
+        }
+        if(c<n && c!=0)
+        {
+            r++;
+        }
+        result = w+r;
+        cout << result << "\n";
+
+    }
+
+    return 0;
+}
