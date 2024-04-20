@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int N,i,c=0;
+    float X;
+    cin >> N;
+    for(i=0; i<N; i++)
+    {
+        cin >> X;
+        c=0;
+        while(X>1.00)
+        {
+            X=X/2;
+            c++;
+        }
+        cout << c << " dias\n";
+    }
+
+    return 0;
+}
