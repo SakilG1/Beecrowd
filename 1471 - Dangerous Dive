@@ -1,0 +1,46 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int N,R,i,j;
+
+    while(cin >> N >> R)
+    {
+        int c=0;
+        int arr[R];
+
+        for(i=0; i<R; i++)
+        {
+            cin >> arr[i];
+        }
+
+        if((N-R)==0)
+        {
+            cout << "*\n";
+        }
+
+        else
+        {
+            for(i=1; i<=N; i++)
+            {
+                for(j=0; j<R; j++)
+                {
+                    if(i==arr[j])
+                    {
+                        c++;
+                    }
+                }
+                if(c==0)
+                {
+                    cout << i << " ";
+                }
+                else{c=0;}
+            }
+            cout << "\n";
+        }
+
+
+    }
+
+    return 0;
+}
