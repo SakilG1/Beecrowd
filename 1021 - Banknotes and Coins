@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    double t;
+    cin >> t;
+    int tk;
+    tk = t;
+    t = (t-tk)*100;
+    int cn;
+    cn = t;
+
+    int n100, n50, n20, n10, n5, n2, n1, c50, c25, c10, c5, c1;
+    n100=tk/100; tk%=100; n50=tk/50; tk%=50; n20=tk/20; tk%=20; n10=tk/10; tk%=10; n5=tk/5; tk%=5; n2=tk/2; tk%=2; n1=tk;
+    c50=cn/50; cn%=50; c25=cn/25l; cn%=25; c10=cn/10; cn%=10; c5=cn/5; cn%=5; c1=cn;
+
+    cout << "NOTAS:\n" << n100 << " nota(s) de R$ 100.00\n" << n50 <<" nota(s) de R$ 50.00\n" << n20 <<" nota(s) de R$ 20.00\n" << n10 <<" nota(s) de R$ 10.00\n" << n5 <<" nota(s) de R$ 5.00\n" << n2 <<" nota(s) de R$ 2.00\n" << "MOEDAS:\n" << n1 << " moeda(s) de R$ 1.00\n" << c50 << " moeda(s) de R$ 0.50\n" << c25 << " moeda(s) de R$ 0.25\n" << c10 << " moeda(s) de R$ 0.10\n" << c5 << " moeda(s) de R$ 0.05\n" << c1 << " moeda(s) de R$ 0.01\n";
+
+    return 0;
+}
