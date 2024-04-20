@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int T,i;
+    while(cin>>T)
+    {
+        float arr[T],b;
+        for(i=0; i<T; i++)
+        {
+            cin >> arr[i];
+        }
+        b=arr[0];
+        for(i=0; i<T; i++)
+        {
+            if(b>arr[i])
+            {
+                b=arr[i];
+            }
+        }
+        cout << b << "\n";
+    }
+
+    return 0;
+}
