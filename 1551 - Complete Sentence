@@ -1,0 +1,40 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,i,x,j,c;
+    cin >> n;
+    cin.ignore();
+
+    while(n--)
+    {
+        string str;
+        getline(cin, str);
+        x=str.length();
+        c=0;
+        for(i='a'; i<='z'; i++)
+        {
+            for(j=0; j<x; j++)
+            {
+                if(i==str[j])
+                {
+                    c++;
+                    break;
+                }
+            }
+        }
+        if(c==26)
+        {
+            cout << "frase completa\n";
+        }
+        else if(c>=13)
+        {
+            cout << "frase quase completa\n";
+        }
+        else{
+            cout << "frase mal elaborada\n";
+        }
+    }
+
+    return 0;
+}
