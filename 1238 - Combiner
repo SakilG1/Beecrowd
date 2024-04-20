@@ -1,0 +1,39 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int p,x,i,m,n;
+    string s1,s2;
+    cin >> p;
+    while(p--)
+    {
+        cin >> s1 >> s2;
+
+        m=s1.length();
+        n=s2.length();
+        x=min(m,n);
+
+        for(i=0; i<x; i++)
+        {
+            cout << s1[i] << s2[i];
+        }
+
+        if(x<m)
+        {
+            for(i=x; i<m; i++)
+            {
+                cout << s1[i];
+            }
+        }
+        else if(x<n)
+        {
+            for(i=x; i<n; i++)
+            {
+                cout << s2[i];
+            }
+        }
+        cout << "\n";
+    }
+
+    return 0;
+}
