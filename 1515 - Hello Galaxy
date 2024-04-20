@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    while(cin >> n && n!=0)
+    {
+        string s1, s2;
+        int a, t, x=0;
+        while(n--)
+        {
+            cin >> s1 >> a >> t;
+            if(x==0)
+            {
+                x=a-t;
+                s2=s1;
+            }
+            if(a-t<x)
+            {
+                x = a-t;
+                s2 = s1;
+            }
+        }
+        cout << s2 << endl;
+    }
+    return 0;
+}
