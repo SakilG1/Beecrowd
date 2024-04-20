@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define pi  3.1415926535897
+int main()
+{
+    double a, b, c;
+    while(cin >> a >> b >> c)
+    {
+        double v, r, s, x;
+        x = (a+b+c)/2;
+        v = sqrt(x*(x-a)*(x-b)*(x-c));
+
+        x = a+b+c;
+        r = pi*(2*v/x)*(2*v/x);
+
+        x = (a*b*c)/(4*v);
+        s = pi*(x*x);
+        s -= v;
+        v -= r;
+
+        printf("%.4f %.4f %.4f\n", s, v, r);
+    }
+
+    return 0;
+}
