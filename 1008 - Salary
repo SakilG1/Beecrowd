@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    double a,b;
+    float c,d;
+
+    cin >> a >> b;
+    cin >> c;
+    d=b*c;
+    cout << "NUMBER = " << a << endl;
+    printf("SALARY = U$ %.2f\n", d);
+
+
+
+
+    return 0;
+}
