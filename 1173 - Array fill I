@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int V,N[10],i,X;
+
+    cin >> V;
+    X=V;
+    for(i=0; i<10; i++)
+    {
+        N[i]=X;
+        X=X*2;
+    }
+    for(i=0; i<10; i++)
+    {
+        cout << "N[" << i << "] = " << N[i] << "\n";
+    }
+    return 0;
+}
