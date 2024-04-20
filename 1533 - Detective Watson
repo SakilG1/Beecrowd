@@ -1,0 +1,35 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int N,i,max,max1,pos;
+    while(true)
+    {
+        cin >> N;
+        int V[N];
+        if(N==0)
+            break;
+
+        max=max1=pos=0;
+
+
+        for(i=0; i<N; i++)
+        {
+            cin >> V[i];
+            if(max<V[i]) max=V[i];
+        }
+        for(i=0; i<N; i++)
+        {
+            if(max1<V[i] && V[i]!=max)
+            {
+                max1=V[i];
+                pos=i+1;
+            }
+        }
+
+        cout << pos << "\n";
+
+    }
+
+    return 0;
+}
