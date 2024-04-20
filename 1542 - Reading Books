@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,b,c,x;
+    while( cin >> a )
+    {
+        if(a==0)
+            break;
+        else{
+            cin >> b >> c;
+        }
+
+        x=((a*b*c)/(c-a));
+        if(x>1)
+        {
+            cout << x << " paginas\n";
+        }
+        else
+        {
+            cout << x << " pagina\n";
+        }
+
+    }
+
+    return 0;
+}
