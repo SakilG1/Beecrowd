@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    double x, n=0;
+    int i=6;
+    while(i--)
+    {
+        cin >> x;
+        if(x>0)
+            n++;
+    }
+    cout << n << " valores positivos\n";
+
+    return 0;
+}
