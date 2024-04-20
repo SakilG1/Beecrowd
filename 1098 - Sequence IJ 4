@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    float i;
+    for(i=0;i<=2.2;i=i+.2)
+    {
+        cout << "I=" << i << " " << "J=" << 1+i << "\n";
+        cout << "I=" << i << " " << "J=" << 2+i << "\n";
+        cout << "I=" << i << " " << "J=" << 3+i << "\n";
+    }
+
+    return 0;
+}
