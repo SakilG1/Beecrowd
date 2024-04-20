@@ -1,0 +1,63 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    char a;
+    cin >> a;
+
+    if(a=='A')
+        cout << "1\n";
+    else if(a=='B')
+        cout << "2\n";
+    else if(a=='C')
+        cout << "3\n";
+    else if(a=='D')
+        cout << "4\n";
+    else if(a=='E')
+        cout << "5\n";
+    else if(a=='F')
+        cout << "6\n";
+    else if(a=='G')
+        cout << "7\n";
+    else if(a=='H')
+        cout << "8\n";
+    else if(a=='I')
+        cout << "9\n";
+    else if(a=='J')
+        cout << "10\n";
+    else if(a=='K')
+        cout << "11\n";
+    else if(a=='L')
+        cout << "12\n";
+    else if(a=='M')
+        cout << "13\n";
+    else if(a=='N')
+        cout << "14\n";
+    else if(a=='O')
+        cout << "15\n";
+    else if(a=='P')
+        cout << "16\n";
+    else if(a=='Q')
+        cout << "17\n";
+    else if(a=='R')
+        cout << "18\n";
+    else if(a=='S')
+        cout << "19\n";
+    else if(a=='T')
+        cout << "20\n";
+    else if(a=='U')
+        cout << "21\n";
+    else if(a=='V')
+        cout << "22\n";
+    else if(a=='W')
+        cout << "23\n";
+    else if(a=='X')
+        cout << "24\n";
+    else if(a=='Y')
+        cout << "25\n";
+    else if(a=='Z')
+        cout << "26\n";
+
+
+    return 0;
+}
