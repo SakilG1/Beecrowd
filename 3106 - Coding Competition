@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,i,c=0;
+    cin >> n;
+    int arr[n];
+
+    for(i=0; i<n; i++)
+    {
+        cin >> arr[i];
+        c=c+(arr[i]/3)*3;
+    }
+    cout << c << "\n";
+    return 0;
+}
