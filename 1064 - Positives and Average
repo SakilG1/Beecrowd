@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    double x, c=0;
+    int i=6, n=0;
+
+    while(i--)
+    {
+        cin >> x;
+
+        if(x>0)
+        {
+            n++;
+            c += x;
+        }
+    }
+
+    cout << n << " valores positivos\n" << fixed << setprecision(1) << c/n << endl;
+
+    return 0;
+}
