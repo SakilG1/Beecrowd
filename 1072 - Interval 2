@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long int n, c=0,d=0;
+    cin >> n;
+
+    while(n--)
+    {
+        long long int x;
+        cin >> x;
+        if(x>=10 && x<=20)
+            c++;
+        else
+            d++;
+    }
+
+    cout << c << " in\n" << d << " out\n";
+
+    return 0;
+}
