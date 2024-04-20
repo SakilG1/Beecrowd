@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t;
+    cin >> t;
+    while(t--)
+    {
+        int x, c=0;
+        cin >> x;
+        for(int i=2; i*i<=x; i++)
+        {
+            if(x%i==0)
+            {
+                cout << x << " nao eh primo\n";
+                c++;
+                break;
+            }
+        }
+        if(c==0)
+            cout << x << " eh primo\n";
+    }
+
+    return 0;
+}
