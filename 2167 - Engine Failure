@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int N,i,l,a=0;
+    cin >> N;
+    int R[N];
+    for(i=0; i<N; i++)
+    {
+        cin >> R[i];
+    }
+
+    l=R[0];
+    for(i=1; i<N; i++)
+    {
+
+        if(l>R[i])
+        {
+            a=i+1;
+            break;
+        }
+        else{
+            l=R[i];
+        }
+    }
+    cout << a << "\n";
+    return 0;
+}
