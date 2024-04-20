@@ -1,0 +1,46 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int x, y, m, n, h, i;
+    cin >> x >> y >> m >> n;
+
+    if(x<m && y<n)
+    {
+        h=m-x;
+        i = n-y;
+    }
+    else if(x<m && y>n)
+    {
+        h = m-x-1;
+        i = 60-y+n;
+    }
+    else if(x<m && y==n)
+    {
+        h = m-x;
+        i=0;
+    }
+    else if(x==m && y<n)
+    {
+        h=0;
+        i=n-y;
+    }
+    else if(x>m && y<n)
+    {
+        h = 24-x+m;
+        i = n-y;
+    }
+    else if(x>=m && y>n)
+    {
+        h = 24-x+m-1;
+        i = 60-y+n;
+    }
+    else{
+        h = 24-x+m;
+        i= n-y;
+    }
+
+    cout << "O JOGO DUROU " << h << " HORA(S) E " << i <<" MINUTO(S)\n";
+
+    return 0;
+}
