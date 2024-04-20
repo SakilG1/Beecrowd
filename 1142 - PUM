@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n, c=1;
+    cin >> n;
+    while(n--)
+    {
+        cout << c << " ";
+        c++;
+        cout << c << " ";
+        c++;
+        cout << c << " PUM\n";
+        c++;
+        c++;
+    }
+
+    return 0;
+}
