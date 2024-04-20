@@ -1,0 +1,43 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    while (1)
+    {
+        double x, s = 0, a = 0;
+        while (1)
+        {
+            cin >> x;
+            if (x > 10.0 || x < 0.0)
+            {
+                cout << "nota invalida\n";
+            }
+            else
+            {
+                s += x;
+                a++;
+                if (a == 2)
+                {
+                    cout << "media = " << fixed << setprecision(2) << s / 2.0 << endl;
+                    break;
+                }
+            }
+        }
+        int n;
+        while (1)
+        {
+            cout << "novo calculo (1-sim 2-nao)\n";
+            cin >> n;
+            if (n > 2 || n < 1)
+                continue;
+            else
+                break;
+        }
+        if(n==2)
+            break;
+        else if(n==1)
+            continue;
+    }
+
+    return 0;
+}
